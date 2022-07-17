@@ -6,7 +6,7 @@ $result = $conn->query("SELECT id, title, excerpt FROM `blog2`");
 $arr = [];
 
 while ($row = $result->fetch_assoc()) {
-    array_push($arr, $row);
+    array_push($arr, $row); 
 }
 
 if (empty($arr)) {
